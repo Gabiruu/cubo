@@ -1,9 +1,9 @@
 <svg width="1366" height="768" viewBox="0 0 1366 768" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g clip-path="url(#clip0_3530_1325)">
+<g clipPath="url(#clip0_3530_1325)">
 <rect width="1366" height="768" fill="url(#paint0_linear_3530_1325)"/>
 <rect x="-110" y="-303" width="2414" height="1460" fill="url(#pattern0)" fill-opacity="0.2"/>
-<circle cx="1230.5" cy="300.5" r="428" stroke="#00ADD2" stroke-width="5"/>
-<circle cx="1060.5" cy="733.5" r="168" stroke="#00ADD2" stroke-width="5"/>
+<circle cx="1230.5" cy="300.5" r="428" stroke="#00ADD2" strokeWidth="5"/>
+<circle cx="1060.5" cy="733.5" r="168" stroke="#00ADD2" strokeWidth="5"/>
 </g>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -11,7 +11,7 @@
 </pattern>
 <linearGradient id="paint0_linear_3530_1325" x1="683" y1="0" x2="683" y2="768" gradientUnits="userSpaceOnUse">
 <stop/>
-<stop offset="1" stop-color="#253245"/>
+<stop offset="1" stopColor="#253245"/>
 </linearGradient>
 <clipPath id="clip0_3530_1325">
 <rect width="1366" height="768" fill="white"/>

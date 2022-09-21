@@ -21,7 +21,7 @@ const UnaLogo = ({
   >
     {title ? <title id={titleId}>{title}</title> : null}
 
-    <g clip-path="url(#clip0_1096_35)">
+    <g clipPath="url(#clip0_1096_35)">
       <path
         d="M8.27275 76.2731C11.895 76.2731 14.8391 78.2177 15.938 81.5675H12.1757C11.4049 79.9979 10.0025 79.2251 8.25006 79.2251C5.39933 79.2251 3.36615 81.3101 3.36615 84.6365C3.36615 87.963 5.39933 90.048 8.25006 90.048C10.0025 90.048 11.4049 89.2752 12.1757 87.6815H15.938C14.8397 91.0548 11.895 92.976 8.27275 92.976C3.57556 92.976 0 89.5319 0 84.6359C0 79.7399 3.57556 76.2724 8.27275 76.2724V76.2731Z"
         fill="#202463"
@@ -47,8 +47,8 @@ const UnaLogo = ({
         fill="url(#paint1_linear_1096_35)"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M72.639 49.5323L43.5009 36.4892L14.3608 49.5323L43.7181 62.4779L72.639 49.5323Z"
         fill="#1B239D"
       />
@@ -66,8 +66,8 @@ const UnaLogo = ({
         y2="-28.2882"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#1E27E7" />
-        <stop offset="1" stop-color="#2CD1FF" />
+        <stop stopColor="#1E27E7" />
+        <stop offset="1" stopColor="#2CD1FF" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1096_35"
@@ -77,8 +77,8 @@ const UnaLogo = ({
         y2="0"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#1E27E7" />
-        <stop offset="1" stop-color="#2CD1FF" />
+        <stop stopColor="#1E27E7" />
+        <stop offset="1" stopColor="#2CD1FF" />
       </linearGradient>
       <clipPath id="clip0_1096_35">
         <rect width="87" height="93" fill="white" />
