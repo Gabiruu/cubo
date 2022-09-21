@@ -1,14 +1,27 @@
 import * as S from './styles'
+import img from '../../../public/images/sobre-nos.jpg'
+import Image from "next/image"
 
 const Hero = () => (
   <S.Wrapper>
-    <S.Title>Analise e priorize os problemas de segurança pública</S.Title>
+    {/* <S.Title>Analise e priorize os problemas de segurança pública</S.Title> */}
+    <S.BoxImg>
+      <Image src={img}/>
+    </S.BoxImg>
     <S.Description>
-      Navegue pelos diversos problemas e se aprofunde em cada um deles para
-      entender seus respectivos níveis de criticidade. Na sequência, priorize
-      aqueles que você considerar mais relevantes para a realidade da sua
-      cidade. Lembre-se: os problemas priorizados serão a base sobre a qual o
-      seu plano municipal será posteriormente estruturado.
+      Modulus Consultoria foi fundada com a união de profissionais especialistas
+      nas diversas áreas da engenharia de infraestrutura. O conceito Modulus de
+      elaboração de soluções de engenharia está calcada na busca incessante de
+      soluções tecnológicas para as demandas de estudos de tráfego, projetos de
+      infraestrutura, avaliação de pavimentos, gerenciamento de ativos
+      concedidos, modelagem de viabilidade de concessões públicas e parcerias
+      público-privadas, verificador independente de ativos concedidos e soluções
+      personalizadas de software para aplicações tecnológicas diversas.
+      <br />
+      <br />
+      <br />
+      Nossa missão é a busca pelo aumento da produtividade e assertividade da
+      engenharia nacional através do emprego da tecnologia e sustentabilidade.
     </S.Description>
   </S.Wrapper>
 )

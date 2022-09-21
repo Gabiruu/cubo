@@ -7,7 +7,7 @@ export default function DiagnosisPage() {
 export const getServerSideProps = withSSRAuth(async () => {
   return {
     redirect: {
-      destination: '/geoprocessamento/problemas-do-municipio',
+      destination: '/geoprocessamento/inicio',
       permanent: false
     }
   }

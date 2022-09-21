@@ -6,9 +6,9 @@ export const Wrapper = styled.footer`
     padding: ${theme.spacings.sm} 0;
     background-color: ${theme.colors.footerColor};
     min-height: 200px;
-    position: absolute;
+    //position: absolute;
     width: 100%;
-    bottom: 0;
+    //bottom: 0;
     
     z ${Container} {
       max-width: calc(${theme.grid.container} + 20rem);

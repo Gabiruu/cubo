@@ -22,7 +22,7 @@ export const Label = styled.p`
   ${({ theme }) => css`
     font-weight: ${theme.font.weights.medium};
     font-size: ${theme.font.content.small};
-    color:  ${theme.colors.black};
+    color:  ${theme.colors.blue};
     line-height: 2.1rem;
     //max-width: 89rem;
   `}

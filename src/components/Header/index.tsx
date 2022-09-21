@@ -12,17 +12,17 @@ const links = [
   {
     id: 1,
     href: '/geoprocessamento',
-    label: 'Diagnóstico'
+    label: 'Início'
   },
   {
     id: 2,
-    href: '#',
-    label: 'Programas',
+    href: '/geoprocessamento/sobre-nos',
+    label: 'Sobre nós',
   },
   {
     id: 3,
     href: '#',
-    label: 'Plano',
+    label: 'Relatórios',
   }
 ]
 

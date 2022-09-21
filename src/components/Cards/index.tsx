@@ -1,6 +1,11 @@
 import * as S from './styles'
-import UserIcon from '../../components/icons/UserIcon'
 import NavBar from '../../components/NavBar'
+
+type CardsProps = {
+  id?: number;
+  label: string;
+  children: React.ReactNode;
+}
 
 const links = [
   {
@@ -10,11 +15,11 @@ const links = [
   },
 ]
 
-const Cards = () => (
+const Cards = (props: CardsProps) => (
   <S.Wrapper>
-    <UserIcon></UserIcon>
-    {/* <S.Label>Geoprocessamento</S.Label> */}
-    <NavBar links={links} variant="small" />
+    {/* <NavBar links={links} variant="small" /> */}
+    {props.children}
+    <S.Label>{props.label}</S.Label>
   </S.Wrapper>
 )
 

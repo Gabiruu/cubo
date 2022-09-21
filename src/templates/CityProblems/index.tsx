@@ -6,6 +6,8 @@ import Header from 'components/Header'
 import Hero from 'components/Hero'
 import RightArrow from 'components/icons/RightArrow'
 import NavBar from 'components/NavBar'
+import UserIcon from 'components/icons/UserIcon'
+import GeoSearchIcon from 'components/icons/GeoSearchIcon'
 import Cards from 'components/Cards'
 import { useProblems } from 'contexts/ProblemsContext'
 import Router from 'next/router'
@@ -44,6 +46,7 @@ const CityProblems = () => {
     <>
       <Header />
       <Container>
+
         {/* <Hero /> */}
         {/* <S.NavBarWrapper>
           <NavBar links={links} />
@@ -56,10 +59,20 @@ const CityProblems = () => {
           </Button>
         </S.ButtonWrapper>
         <S.Text>Última atualização de dados: Fev/2022</S.Text> */}
+        <S.Wrapper>
+
+        <S.Title>
+          Início
+        </S.Title>
         <S.CardsWrapper>
-          <Cards />
-          <Cards />
+          <Cards label='Geoprocessamento'> 
+            <GeoSearchIcon/>
+          </Cards>
+          <Cards label='Geoprocessamento'> 
+            <GeoSearchIcon/>
+          </Cards>
         </S.CardsWrapper>
+        </S.Wrapper>
       </Container>
       <Footer />
     </>
