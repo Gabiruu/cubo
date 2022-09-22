@@ -7,22 +7,14 @@ import Hero from 'components/Hero'
 import RightArrow from 'components/icons/RightArrow'
 import NavBar from 'components/NavBar'
 import UserIcon from 'components/icons/UserIcon'
-
 import GeoSearchIcon from 'components/icons/GeoSearchIcon'
-import CamEngineIcon from 'components/icons/CamEngineIcon'
-import UserCheckIcon from 'components/icons/UserCheckIcon'
-import FileProcessIcon from 'components/icons/FileProcessIcon'
-import FileArrowIcon from 'components/icons/FileArrowIcon'
-import UserGuideIcon from 'components/icons/UserGuideIcon'
-import CarCamIcon from 'components/icons/CarCamIcon'
-
 import Cards from 'components/Cards'
 import { useProblems } from 'contexts/ProblemsContext'
 import Router from 'next/router'
 
 import * as S from './styles'
 
-const defautTemplate = () => {
+const CityProblems = () => {
   const { prioritizedProblems } = useProblems()
 
   const links = [
@@ -54,6 +46,7 @@ const defautTemplate = () => {
     <>
       <Header />
       <Container>
+
         {/* <Hero /> */}
         {/* <S.NavBarWrapper>
           <NavBar links={links} />
@@ -67,31 +60,18 @@ const defautTemplate = () => {
         </S.ButtonWrapper>
         <S.Text>Última atualização de dados: Fev/2022</S.Text> */}
         <S.Wrapper>
-          <S.Title>CDA - Cadastro de Ativos </S.Title>
-          <S.CardsWrapper>
-            <Cards label="Processamento">
-              <CamEngineIcon />
-            </Cards>
-            <Cards label="Pós - Processamento">
-              <UserCheckIcon />
-            </Cards>
-          </S.CardsWrapper>
-          <S.CardsWrapper>
-            <Cards label="Contrato">
-              <FileProcessIcon />
-            </Cards>
-            <Cards label="Relatório CDA">
-              <FileArrowIcon />
-            </Cards>
-          </S.CardsWrapper>
-          <S.CardsWrapper>
-            <Cards label="Relatório CDA">
-              <UserGuideIcon />
-            </Cards>
-            <Cards label="Relatório CDA">
-              <CarCamIcon />
-            </Cards>
-          </S.CardsWrapper>
+
+        <S.Title>
+          Início
+        </S.Title>
+        <S.CardsWrapper>
+          <Cards label='Geoprocessamento'> 
+            <GeoSearchIcon/>
+          </Cards>
+          <Cards label='Geoprocessamento'> 
+            <GeoSearchIcon/>
+          </Cards>
+        </S.CardsWrapper>
         </S.Wrapper>
       </Container>
       <Footer />
@@ -99,4 +79,4 @@ const defautTemplate = () => {
   )
 }
 
-export default defautTemplate
+export default CityProblems
