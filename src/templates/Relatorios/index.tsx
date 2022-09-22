@@ -4,12 +4,10 @@ import Header from 'components/Header'
 import ContractPen from 'components/icons/ContractPen'
 import Contract from 'components/icons/Contract'
 import Cards from 'components/Cards'
-import { useProblems } from 'contexts/ProblemsContext'
 
 import * as S from './styles'
 
 const Contrato = () => {
-  const { prioritizedProblems } = useProblems()
 
   return (
     <>
