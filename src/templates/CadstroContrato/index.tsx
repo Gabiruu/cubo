@@ -85,7 +85,7 @@ const CityProblems = () => {
                 <S.LabelTextArea>Estado</S.LabelTextArea>
                 <TextField
                   placeholder="Estado"
-                  type=""
+                  type="text"
                   {...register('email')}
                   error={errors.password?.message || inputError}
                 />
@@ -110,10 +110,9 @@ const CityProblems = () => {
             {inputError && (
               <S.ErrorMessage>email ou senha incorretos</S.ErrorMessage>
             )}
-            {/* 
             <S.ButtonContent>
-              <Button isLoading={loading}>Entrar</Button>
-            </S.ButtonContent> */}
+              <Button isLoading={loading}>Enviar</Button>
+            </S.ButtonContent>
           </S.Form>
         </S.Wrapper>
       </Container>
