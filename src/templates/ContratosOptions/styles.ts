@@ -87,7 +87,7 @@ export const TableHead = styled.div`
   background-color: #595959;
   border-radius: 14px 14px 0px 0px;
   div {
-    width: 33%;
+    width: 25%;
     padding: 20px;
     p {
       text-align: center;

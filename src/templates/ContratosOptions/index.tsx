@@ -1,33 +1,27 @@
 import Container from 'components/Container'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import WarningIcon from 'components/icons/WarningIcon'
-import ViewIcon from 'components/icons/ViewIcon'
 import ModifyIcon from 'components/icons/ModifyIcon'
-import DownloadIcon from 'components/icons/DownloadIcon'
+import DeleIcon from 'components/icons/DeleIcon'
 import ArrowLeft from 'components/icons/ArrowLeft'
 import ArrowRight from 'components/icons/ArrowRight'
 import * as S from './styles'
 
-const RelatoriosOptions = () => {
+const ContratosOptions = () => {
   return (
     <>
       <Header />
       <Container>
         <S.Wrapper>
-          <S.Title>Relatórios</S.Title>
-          <S.SearchRow>
-            <div>
-              <WarningIcon></WarningIcon>
-            </div>
-            <div>
-              <WarningIcon></WarningIcon>
-            </div>
-          </S.SearchRow>
+          <S.Title>Contratos</S.Title>
+
           <S.Table>
             <S.TableHead>
               <div>
-                <p>Categoria</p>
+                <p>Nome</p>
+              </div>
+              <div>
+                <p>Número</p>
               </div>
               <div>
                 <p>Data</p>
@@ -38,121 +32,83 @@ const RelatoriosOptions = () => {
             </S.TableHead>
             <S.TableLine>
               <div>
-                <p>Categoria</p>
+                <p>Nome</p>
               </div>
               <div>
-                <p>Data</p>
+                <p>Número</p>
+              </div>
+              <div>
+                <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
                 <S.TableIcon>
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
-                  <DownloadIcon />
-                </S.TableIcon>
-              </S.TableIconsWrapper>
-            </S.TableLine>
-            <S.TableLine>
-              <div>
-                <p>Categoria</p>
-              </div>
-              <div>
-                <p>Data</p>
-              </div>
-              <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <ModifyIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <DownloadIcon />
-                </S.TableIcon>
-              </S.TableIconsWrapper>
-            </S.TableLine>
-            <S.TableLine>
-              <div>
-                <p>Categoria</p>
-              </div>
-              <div>
-                <p>Data</p>
-              </div>
-              <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <ModifyIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <DownloadIcon />
-                </S.TableIcon>
-              </S.TableIconsWrapper>
-            </S.TableLine>
-            <S.TableLine>
-              <div>
-                <p>Categoria</p>
-              </div>
-              <div>
-                <p>Data</p>
-              </div>
-              <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <ModifyIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <DownloadIcon />
+                  <DeleIcon />
                 </S.TableIcon>
               </S.TableIconsWrapper>
             </S.TableLine>
 
             <S.TableLine>
               <div>
-                <p>Categoria</p>
+                <p>Nome</p>
               </div>
               <div>
-                <p>Data</p>
+                <p>Número</p>
+              </div>
+              <div>
+                <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
                 <S.TableIcon>
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
-                  <DownloadIcon />
+                  <DeleIcon />
                 </S.TableIcon>
               </S.TableIconsWrapper>
             </S.TableLine>
 
             <S.TableLine>
               <div>
-                <p>Categoria</p>
+                <p>Nome</p>
               </div>
               <div>
-                <p>Data</p>
+                <p>Número</p>
+              </div>
+              <div>
+                <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ViewIcon />
-                </S.TableIcon>
                 <S.TableIcon>
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
-                  <DownloadIcon />
+                  <DeleIcon />
                 </S.TableIcon>
               </S.TableIconsWrapper>
             </S.TableLine>
 
+            <S.TableLine>
+              <div>
+                <p>Nome</p>
+              </div>
+              <div>
+                <p>Número</p>
+              </div>
+              <div>
+                <p>00/00/0000</p>
+              </div>
+              <S.TableIconsWrapper>
+                <S.TableIcon>
+                  <ModifyIcon />
+                </S.TableIcon>
+                <S.TableIcon>
+                  <DeleIcon />
+                </S.TableIcon>
+              </S.TableIconsWrapper>
+            </S.TableLine>
             <S.PaginationLine>
               <S.PaginationBtnWrraper>
                 <S.PaginationBtn>
@@ -174,4 +130,4 @@ const RelatoriosOptions = () => {
   )
 }
 
-export default RelatoriosOptions
+export default ContratosOptions
