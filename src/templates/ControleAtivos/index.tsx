@@ -31,7 +31,7 @@ const defautTemplate = () => {
             <Cards label="Contrato" href='contrato'>
               <FileProcessIcon />
             </Cards>
-            <Cards label="Relatório CDA" href=''>
+            <Cards label="Relatório CDA" href='relatorios'>
               <FileArrowIcon />
             </Cards>
           </S.CardsWrapper>

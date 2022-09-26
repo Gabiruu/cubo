@@ -7,19 +7,19 @@ import Cards from 'components/Cards'
 
 import * as S from './styles'
 
-const Contrato = () => {
+const Relatorios = () => {
 
   return (
     <>
       <Header />
       <Container>
         <S.Wrapper>
-          <S.Title>Contrato</S.Title>
+          <S.Title>Relatórios </S.Title>
           <S.CardsWrapper>
-            <Cards label="Contratos" href=''>
+            <Cards label="Relatórios Técnicos" href=''>
               <Contract />
             </Cards>
-            <Cards label="Novo Contrato" href=''>
+            <Cards label="Novo Cadastro" href=''>
               <ContractPen />
             </Cards>
           </S.CardsWrapper>
@@ -30,4 +30,4 @@ const Contrato = () => {
   )
 }
 
-export default Contrato
+export default Relatorios
