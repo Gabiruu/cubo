@@ -15,6 +15,9 @@ export const Wrapper = styled.a`
   background: #ffffff;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.26);
   border-radius: 38px;
+  &:hover{
+    cursor: pointer;
+  }
 `
 
 
