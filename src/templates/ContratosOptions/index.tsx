@@ -6,12 +6,14 @@ import DeleIcon from 'components/icons/DeleIcon'
 import ArrowLeft from 'components/icons/ArrowLeft'
 import ArrowRight from 'components/icons/ArrowRight'
 import * as S from './styles'
+import ReturnLink from 'components/ReturnLink'
 
 const ContratosOptions = () => {
   return (
     <>
       <Header />
       <Container>
+        <ReturnLink href="/geoprocessamento/contrato" />
         <S.Wrapper>
           <S.Title>Contratos</S.Title>
 

@@ -13,6 +13,7 @@ import { useProblems } from 'contexts/ProblemsContext'
 import Router from 'next/router'
 
 import * as S from './styles'
+import ReturnLink from 'components/ReturnLink'
 
 const Geoprocessamento = () => {
   const { prioritizedProblems } = useProblems()
@@ -21,6 +22,7 @@ const Geoprocessamento = () => {
     <>
       <Header />
       <Container>
+        <ReturnLink href='/geoprocessamento/'/>
         <S.Wrapper>
           <S.Title>Geoprocessamento</S.Title>
           <S.CardsWrapper>

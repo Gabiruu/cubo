@@ -1,18 +1,8 @@
-import AccordionCategoryList from 'components/AccordionCategoryList'
-import Button from 'components/Button'
 import Container from 'components/Container'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import Hero from 'components/Hero'
-import RightArrow from 'components/icons/RightArrow'
-import NavBar from 'components/NavBar'
-import UserIcon from 'components/icons/UserIcon'
-import FileProcessIcon from 'components/icons/FileProcessIcon'
-import Cards from 'components/Cards'
+import ReturnLink from 'components/ReturnLink'
 import { useProblems } from 'contexts/ProblemsContext'
-import Router from 'next/router'
-import { PDFViewer } from '@react-pdf/renderer'
-import img from '../../../public/images/sobre-nos.jpg'
 //import document from '../../../public/images/dummy.pdf'
 //import { Document } from 'react-pdf'
 
@@ -25,6 +15,7 @@ const ManualFilmagem = () => {
     <>
       <Header />
       <Container>
+        <ReturnLink href="/geoprocessamento/controle-de-ativos" />
         <S.Wrapper>
           <S.Title>Geoprocessamento</S.Title>
           <S.CardsWrapper>

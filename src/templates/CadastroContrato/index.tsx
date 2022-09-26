@@ -13,6 +13,7 @@ import * as yup from 'yup'
 
 import * as S from './styles'
 import { useState } from 'react'
+import ReturnLink from 'components/ReturnLink'
 
 const onSubmit = () => {
   return console.log('teste')
@@ -59,6 +60,7 @@ const CityProblems = () => {
     <>
       <Header />
       <Container>
+        <ReturnLink href="/geoprocessamento/contrato" />
         <S.Wrapper>
           <S.Title>Cadastro</S.Title>
 

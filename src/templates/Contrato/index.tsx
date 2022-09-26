@@ -7,6 +7,7 @@ import Cards from 'components/Cards'
 import { useProblems } from 'contexts/ProblemsContext'
 
 import * as S from './styles'
+import ReturnLink from 'components/ReturnLink'
 
 const Relatorios = () => {
   const { prioritizedProblems } = useProblems()
@@ -15,13 +16,14 @@ const Relatorios = () => {
     <>
       <Header />
       <Container>
+        <ReturnLink href="/geoprocessamento/controle-de-ativos" />
         <S.Wrapper>
           <S.Title>Contrato</S.Title>
           <S.CardsWrapper>
-            <Cards label="Contratos" href='contratos-options'>
+            <Cards label="Contratos" href="contratos-options">
               <Contract />
             </Cards>
-            <Cards label="Novo Contrato" href='cadastro-contrato'>
+            <Cards label="Novo Contrato" href="cadastro-contrato">
               <ContractPen />
             </Cards>
           </S.CardsWrapper>
