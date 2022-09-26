@@ -33,7 +33,7 @@ const signInFormSchema = yup.object().shape({
   password: yup.string().required('senha obrigatória')
 })
 
-const CityProblems = () => {
+const CadastroRelatorio = () => {
   const [inputError, setInputError] = useState(false)
 
   const {
@@ -121,4 +121,4 @@ const CityProblems = () => {
   )
 }
 
-export default CityProblems
+export default CadastroRelatorio

@@ -16,10 +16,10 @@ const Relatorios = () => {
         <S.Wrapper>
           <S.Title>Relatórios </S.Title>
           <S.CardsWrapper>
-            <Cards label="Relatórios Técnicos" href=''>
+            <Cards label="Relatórios Técnicos" href='relatorios-options'>
               <Contract />
             </Cards>
-            <Cards label="Novo Cadastro" href=''>
+            <Cards label="Novo Cadastro" href='cadastro-relatorios'>
               <ContractPen />
             </Cards>
           </S.CardsWrapper>
