@@ -7,7 +7,7 @@ export default function HomePage() {
 export const getServerSideProps: GetServerSideProps = async () => {
   return {
     redirect: {
-      destination: '/',
+      destination: '/login',
       permanent: true
     }
   }
