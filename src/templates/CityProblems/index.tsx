@@ -1,12 +1,6 @@
-import AccordionCategoryList from 'components/AccordionCategoryList'
-import Button from 'components/Button'
 import Container from 'components/Container'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import Hero from 'components/Hero'
-import RightArrow from 'components/icons/RightArrow'
-import NavBar from 'components/NavBar'
-import UserIcon from 'components/icons/UserIcon'
 import GeoSearchIcon from 'components/icons/GeoSearchIcon'
 import Cards from 'components/Cards'
 import { useProblems } from 'contexts/ProblemsContext'
@@ -65,10 +59,10 @@ const CityProblems = () => {
           Início
         </S.Title>
         <S.CardsWrapper>
-          <Cards label='Geoprocessamento'> 
+          <Cards label='Geoprocessamento' href='geoprocessamento'> 
             <GeoSearchIcon/>
           </Cards>
-          <Cards label='Geoprocessamento'> 
+          <Cards label='Geoprocessamento' href='geoprocessamento'> 
             <GeoSearchIcon/>
           </Cards>
         </S.CardsWrapper>

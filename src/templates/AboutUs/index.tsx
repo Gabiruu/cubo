@@ -28,6 +28,11 @@ const AboutUs = () => {
   return (
     <>
       <Header />
+      <Link href={'login'}>
+        <a style={{ margin: '20px 0' }}>
+          <LeftArrow color="white" />
+        </a>
+      </Link>
       <Container>
         <S.ReturnLinkContainer>
           <Link href="/geoprocessamento/">

@@ -16,10 +16,10 @@ const Contrato = () => {
         <S.Wrapper>
           <S.Title>Contrato</S.Title>
           <S.CardsWrapper>
-            <Cards label="Contratos">
+            <Cards label="Contratos" href=''>
               <Contract />
             </Cards>
-            <Cards label="Novo Contrato">
+            <Cards label="Novo Contrato" href=''>
               <ContractPen />
             </Cards>
           </S.CardsWrapper>

@@ -24,7 +24,7 @@ const Geoprocessamento = () => {
         <S.Wrapper>
           <S.Title>Geoprocessamento</S.Title>
           <S.CardsWrapper>
-            <Cards label="CDA - Cadastro de Ativos">
+            <Cards label="CDA - Cadastro de Ativos" href='controle-de-ativos'>
               <FileProcessIcon />
             </Cards>
           </S.CardsWrapper>
