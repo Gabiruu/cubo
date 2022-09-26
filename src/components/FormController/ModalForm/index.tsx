@@ -23,8 +23,11 @@ export default function ModalForm({
   return (
     <S.ModalContainer>
       <S.Content>
+        <S.Button onClick={handleOptionalButtonAction} optional>
+          X
+        </S.Button>
         {children}
-
+{/* 
         <S.Hr />
 
         <S.ButtonArea doubleButtons={!!optionalButtonText}>
@@ -39,7 +42,7 @@ export default function ModalForm({
               {mainButtonText}
             </S.Button>
           )}
-        </S.ButtonArea>
+        </S.ButtonArea> */}
       </S.Content>
     </S.ModalContainer>
   )

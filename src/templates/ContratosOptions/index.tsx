@@ -8,7 +8,17 @@ import ArrowRight from 'components/icons/ArrowRight'
 import * as S from './styles'
 import ReturnLink from 'components/ReturnLink'
 
+import ModalForm from 'components/FormController/ModalForm'
+import React, { useEffect, useState } from 'react'
+
 const ContratosOptions = () => {
+  const [modalOpen, setModalOpen] = useState(false)
+  useEffect(() => {
+    !modalOpen
+      ? (document.body.style.overflow = 'unset')
+      : (document.body.style.overflow = 'hidden')
+  }, [modalOpen])
+
   return (
     <>
       <Header />
@@ -43,7 +53,38 @@ const ContratosOptions = () => {
                 <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
+                <S.TableIcon
+                  onClick={() => {
+                    setModalOpen(!modalOpen)
+                    console.log('teste')
+                  }}
+                >
+                  <ModifyIcon />
+                </S.TableIcon>
+
                 <S.TableIcon>
+                  <DeleIcon />
+                </S.TableIcon>
+              </S.TableIconsWrapper>
+            </S.TableLine>
+
+            <S.TableLine>
+              <div>
+                <p>Nome</p>
+              </div>
+              <div>
+                <p>Número</p>
+              </div>
+              <div>
+                <p>00/00/0000</p>
+              </div>
+              <S.TableIconsWrapper>
+                <S.TableIcon
+                  onClick={() => {
+                    setModalOpen(!modalOpen)
+                    console.log('teste')
+                  }}
+                >
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
@@ -63,7 +104,12 @@ const ContratosOptions = () => {
                 <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
-                <S.TableIcon>
+                <S.TableIcon
+                  onClick={() => {
+                    setModalOpen(!modalOpen)
+                    console.log('teste')
+                  }}
+                >
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
@@ -83,27 +129,12 @@ const ContratosOptions = () => {
                 <p>00/00/0000</p>
               </div>
               <S.TableIconsWrapper>
-                <S.TableIcon>
-                  <ModifyIcon />
-                </S.TableIcon>
-                <S.TableIcon>
-                  <DeleIcon />
-                </S.TableIcon>
-              </S.TableIconsWrapper>
-            </S.TableLine>
-
-            <S.TableLine>
-              <div>
-                <p>Nome</p>
-              </div>
-              <div>
-                <p>Número</p>
-              </div>
-              <div>
-                <p>00/00/0000</p>
-              </div>
-              <S.TableIconsWrapper>
-                <S.TableIcon>
+                <S.TableIcon
+                  onClick={() => {
+                    setModalOpen(!modalOpen)
+                    console.log('teste')
+                  }}
+                >
                   <ModifyIcon />
                 </S.TableIcon>
                 <S.TableIcon>
@@ -128,6 +159,62 @@ const ContratosOptions = () => {
         </S.Wrapper>
       </Container>
       <Footer />
+      {modalOpen && (
+        <ModalForm
+          optionalButtonText="Voltar para Causas"
+          mainButtonText="Sim, excluir"
+          handleOptionalButtonAction={() => {
+            setModalOpen(!modalOpen)
+          }}
+          handleMainButtonAction={function (e: any): void | React.ReactNode {
+            throw new Error('Function not implemented.')
+          }}
+        >
+          <>
+            <S.Table>
+              <S.TableHead>
+                <div>
+                  <p>Nome</p>
+                </div>
+                <div>
+                  <p>Número</p>
+                </div>
+                <div>
+                  <p>Data</p>
+                </div>
+                <div>
+                  <p>Ações</p>
+                </div>
+              </S.TableHead>
+              <S.TableLine>
+                <div>
+                  <p>Nome</p>
+                </div>
+                <div>
+                  <p>Número</p>
+                </div>
+                <div>
+                  <p>00/00/0000</p>
+                </div>
+                <S.TableIconsWrapper>
+                  <S.TableIcon
+                    onClick={() => {
+                      setModalOpen(!modalOpen)
+                      console.log('teste')
+                    }}
+                  >
+                    <ModifyIcon />
+                  </S.TableIcon>
+
+                  <S.TableIcon>
+                    <DeleIcon />
+                  </S.TableIcon>
+                </S.TableIconsWrapper>
+              </S.TableLine>
+            </S.Table>
+          </>
+        </ModalForm>
+      )}
     </>
   )
 }

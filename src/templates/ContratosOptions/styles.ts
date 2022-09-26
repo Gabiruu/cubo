@@ -125,6 +125,9 @@ export const TableIconsWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  &:hover{
+    cursor: pointer;
+  }
 `
 
 export const TableIcon = styled.span`
