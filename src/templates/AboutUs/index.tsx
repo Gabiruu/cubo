@@ -11,7 +11,7 @@ const AboutUs = () => {
     <>
       <Header />
       <Container>
-        <ReturnLink />
+        <ReturnLink href='/geoprocessamento/'/>
         <Hero />
       </Container>
       <Footer />

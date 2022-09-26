@@ -1,21 +1,24 @@
 import LeftArrow from 'components/icons/LeftArrow'
 import Link from 'next/link'
-
 import * as S from './styles'
 
-const ReturnLink = () => {
+type CardsProps = {
+  id?: number
+  href: string
+}
 
+const ReturnLink = (props: CardsProps) => {
   return (
     <>
-        <S.ReturnLinkContainer>
-          <Link href="/geoprocessamento/">
-            <S.SvgWrrapper>
-              <a>
-                <LeftArrow/>
-              </a>
-            </S.SvgWrrapper>
-          </Link>
-        </S.ReturnLinkContainer>
+      <S.ReturnLinkContainer>
+        <Link href={props.href}>
+          <S.SvgWrrapper>
+            <a>
+              <LeftArrow />
+            </a>
+          </S.SvgWrrapper>
+        </Link>
+      </S.ReturnLinkContainer>
     </>
   )
 }

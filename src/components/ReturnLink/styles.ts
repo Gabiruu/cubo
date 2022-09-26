@@ -17,5 +17,9 @@ export const SvgWrrapper = styled.div`
       left: 9px;
     }
   }
+
+  &:hover{
+    cursor: pointer;
+  }
 `
 
